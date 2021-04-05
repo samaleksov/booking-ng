@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using BookingNG.Providers.Service.Models;
 using BookingNG.Providers.Service.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
@@ -15,25 +15,24 @@ namespace BookingNG.Providers.Service.Controllers
     {
         private readonly ILogger<RoutesController> logger;
         private readonly IRouteProviderService routeProviderService;
+        private readonly IMapper mapper;
 
-        public RoutesController(IRouteProviderService routeProviderService, ILogger<RoutesController> logger)
+        public RoutesController(
+            IRouteProviderService routeProviderService,
+            IMapper mapper,
+            ILogger<RoutesController> logger)
         {
             this.logger = logger;
+            this.mapper = mapper;
             this.routeProviderService = routeProviderService;
 
         }
 
         [HttpGet]
-        public IEnumerable<RouteModel> Get()
+        public async Task<IEnumerable<RouteModel>> Get()
         {
-            var rng = new Random();
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-            {
-                Date = DateTime.Now.AddDays(index),
-                TemperatureC = rng.Next(-20, 55),
-                Summary = Summaries[rng.Next(Summaries.Length)]
-            })
-            .ToArray();
+            var routes = await this.routeProviderService.GetRoutes();
+            return this.mapper.Map<IEnumerable<RouteModel>>(routes);
         }
     }
 }

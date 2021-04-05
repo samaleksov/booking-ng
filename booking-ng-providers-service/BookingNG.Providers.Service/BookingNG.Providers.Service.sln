@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.809.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookingNG.Providers.Service", "BookingNG.Providers.Service\BookingNG.Providers.Service.csproj", "{31470CEE-FAF6-485A-87FB-4202D38F14D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookingNG.Providers.Service.Tests", "BookingNG.Providers.Service.Tests\BookingNG.Providers.Service.Tests.csproj", "{266DBCC3-DC08-45E9-BCDF-64C2AADADD13}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31470CEE-FAF6-485A-87FB-4202D38F14D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31470CEE-FAF6-485A-87FB-4202D38F14D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31470CEE-FAF6-485A-87FB-4202D38F14D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31470CEE-FAF6-485A-87FB-4202D38F14D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{266DBCC3-DC08-45E9-BCDF-64C2AADADD13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{266DBCC3-DC08-45E9-BCDF-64C2AADADD13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{266DBCC3-DC08-45E9-BCDF-64C2AADADD13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{266DBCC3-DC08-45E9-BCDF-64C2AADADD13}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {46524850-665E-4167-B0F9-B407EA34D8F8}
+	EndGlobalSection
+EndGlobal

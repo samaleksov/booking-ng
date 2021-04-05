@@ -1,0 +1,21 @@
+version: "3.2"
+services:
+  booking-ng-providers-service:
+    build: booking-ng-providers-service/BookingNG.Providers.Service/BookingNG.Providers.Service
+    container_name: 'booking-ng-providers-service'
+    ports:
+        - 3002:80
+  booking-ng-frontend-product-bff:
+    build: booking-ng-frontend-product-bff
+    container_name: 'booking-ng-frontend-product-bff'
+    depends_on:
+      - booking-ng-providers-service
+    ports:
+        - 3001:80
+  booking-ng-frontend-product:
+    build: booking-ng-frontend-product
+    container_name: 'booking-ng-frontend-product'
+    depends_on:
+      - booking-ng-frontend-product-bff
+    ports:
+        - 3000:3000

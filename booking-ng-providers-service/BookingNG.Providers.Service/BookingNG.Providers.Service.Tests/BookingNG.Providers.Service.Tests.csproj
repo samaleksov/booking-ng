@@ -17,6 +17,13 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="Moq" Version="4.16.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BookingNG.Providers.Service\BookingNG.Providers.Service.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Fixtures\" />
+  </ItemGroup>
 </Project>
