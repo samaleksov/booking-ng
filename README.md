@@ -19,3 +19,23 @@ Node.js BFF application
 
 ###### Running the playground environment:
 `docker-compose up`
+
+###### Views:
+
+![Context](./docs/views/SA-Context.png "Context view")
+
+---
+
+![ExampleTeamStructure](./docs/views/SA-ExampleTeamStructure.png "Example team structure view")
+
+---
+
+![Modules](./docs/views/SA-Modules.png "Modules view")
+
+---
+
+![Hight Level Architecture](./docs/views/SA-HLA.png "HLA view")
+
+---
+
+![ComponentsAndConnectors](./docs/views/SA-CC.png "Components and connectors view")
