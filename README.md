@@ -20,6 +20,11 @@ Node.js BFF application
 ###### Running the playground environment:
 `docker-compose up`
 
+- Frontend available on http://localhost:3000
+- BFF available on http://localhost:3001
+- µService available on http://localhost:3002/
+
+
 ###### Views:
 
 ![Context](./docs/views/SA-Context.png "Context view")
